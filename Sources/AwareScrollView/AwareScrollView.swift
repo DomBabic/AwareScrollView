@@ -8,9 +8,9 @@ import SwiftUI
 
 public struct AwareScrollView<Content: View>: View {
     
-    @StateObject var viewModel: AwareScrollViewModel
+    @StateObject public var viewModel: AwareScrollViewModel
     
-    var content: () -> Content
+    public var content: () -> Content
     
     @State private var showChild = false
     
