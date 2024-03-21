@@ -26,7 +26,10 @@ scrolling is enabled in the direction of the *axes* provided at the component in
 
 Should the content size change at any time, component will automatically adjust to reflect this change.
 
-<video src="./Resources/AwareScrollView.mov" width="240" height="320" controls></video>
+<p align="center">
+  <img src="https://github.com/DomBabic/AwareScrollView/assets/10515069/df68b48b-d18e-4396-90b8-8bd6713b0a88" width="250"/><br/>
+  <i>Usage example</i>
+</p>
 
 ## Installation
 
