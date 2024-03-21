@@ -12,11 +12,14 @@ public struct AwareScrollView<Content: View>: View {
     
     public var content: () -> Content
     
-    @State private var showChild = false
+    public init(viewModel: AwareScrollViewModel, content: @escaping () -> Content) {
+        self._viewModel = StateObject(wrappedValue: viewModel)
+        self.content = content
+    }
     
     public var body: some View {
         ScrollView(viewModel.shouldScroll ? viewModel.axes : [], showsIndicators: viewModel.showsIndicators) {
-            if showChild {
+            if viewModel.showChild {
                 content()
                     .onSizeChange { newSize in
                         viewModel.contentSize = newSize
@@ -27,7 +30,7 @@ public struct AwareScrollView<Content: View>: View {
             viewModel.scrollViewSize = newSize
         }
         .onAppear {
-            showChild = true
+            viewModel.showChild = true
         }
     }
 }

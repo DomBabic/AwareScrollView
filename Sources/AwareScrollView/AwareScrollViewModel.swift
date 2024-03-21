@@ -24,6 +24,9 @@ public class AwareScrollViewModel: ObservableObject {
     /// Flag indicating whether or not ScrollView should show scroll indicators.
     var showsIndicators: Bool
     
+    /// Flag indicating whether content should be displayed or not.
+    @Published var showChild = false
+    
     /// Size of the ScrollView.
     @Published var scrollViewSize: CGSize = .zero
     /// Intrinsic content size of the ScrollView.
