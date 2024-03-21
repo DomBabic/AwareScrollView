@@ -1,9 +1,7 @@
 //
 //  View+SizePreferenceKey.swift
-//  Placeholder
 //
-//  Created by Dominik Babić on 03.03.2023..
-//  Copyright © 2023 Teltech Systems Inc. All rights reserved.
+//  Created by Dominik Babić on 21.03.2024..
 //
 
 import Foundation
